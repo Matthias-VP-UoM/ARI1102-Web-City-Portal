@@ -1,0 +1,219 @@
+body{
+    /*background-color: rgb(255, 215, 0);*/
+    font-size: 18px;
+    text-align: center;
+}
+
+#main-page{
+    background-image: url('https://thumbs.dreamstime.com/z/siggiewi-malta-june-festival-garlands-lanterns-decorate-san-nikola-street-st-nicholas-parish-church-ornate-141979743.jpg');
+}
+
+#review-page{
+    background-image: url('images/siggiewi-background-image.jpg');
+}
+
+#sub-page{
+    background-image: url('images/siggiewi-background-image.jpg');
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+}
+
+.page-title{
+    background-color: #7FFF00;
+    padding: 0;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.header-nav ul li{
+    display: inline-block;
+}
+
+.header-nav ul li a{
+    margin: 0 30px;
+    padding: 5px;
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.29em;
+    font-weight: bold;
+}
+
+.header-nav ul li a:hover{
+    color: #0f5499;
+}
+
+h1{
+    display: inline;
+    font-size: 2.07em;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 1.35em;
+    text-decoration: underline;
+}
+
+.sub-header h3{
+    font-size: 1.525em;
+}
+
+h3 a{
+    color: rgb(0, 0, 0);
+}
+
+p{
+    font-size: 1.15em;
+}
+
+div{
+    padding-bottom: 0.1px;
+}
+
+hr{
+    border: 3.25px solid rgb(0, 100, 0);
+}
+
+.city-history{
+    background-color: rgba(0, 255, 255, 0.8);
+}
+
+.city-weather{
+    background-color: #DC143CAF;
+}
+
+.city-location{
+    background-color: #E794E7;
+}
+
+#map { 
+    height: 500px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#divWeather h3{
+    margin: 10px;
+}
+
+.form-section, .past-reviews-section{
+    text-align: left;
+    font-size: 20px;
+}
+
+.form-section input{
+    width: 15%;
+}
+
+.form-section #inpTime{
+    width: 15%;
+}
+
+.past-reviews-section input, .past-reviews-section textarea{
+    background: rgba(255, 255, 255, 0.4);
+    color: #000;
+    /*border: 0 none;*/
+    outline: none;
+}
+
+
+/* make pages responsive according to screen size */
+@media (max-width: 675px){
+    #review-page * {
+	width: 100%;
+    }
+
+    .form-section input{
+        width: 20%;
+    }
+
+
+    .form-section #inpTime{
+        width: 15%;
+    }
+}
+
+@media (max-width: 600px){
+    p{
+        font-size: 0.95em;
+        width:100%;
+    }
+
+    h1{
+        font-size: 1.75em;
+    }
+
+    h2{
+        font-size: 1.3em;
+    }
+
+    h3{
+        font-size: 1.12em;
+    }
+
+    img{
+        width: 60%;
+        height: auto;
+    }
+
+    .header-nav ul li a{
+        margin: 0 15px;
+        font-size: 0.75em;
+    }
+
+    .form-section textarea{
+        width: 80%;
+    }
+}
+
+@media (max-width: 510px){
+    #review-page * {
+        width: 95%;
+    }
+
+    .form-section input{
+        width: 25%;
+    }
+
+    .form-section #inpTime{
+        width: 20%;
+    }
+}
+
+@media (max-width: 400px){
+    .form-section input{
+        width: 30%;
+    }
+
+    .form-section #inpTime{
+        width: 25%;
+    }
+}
+
+@media (max-width: 350px){
+    #review-page * {
+        width: 90%;
+    }
+
+
+    .form-section input{
+        width: 35%;
+    }
+
+    .form-section #inpTime{
+        width: 30%;
+    }
+}
+
+@media (max-width: 300px){
+    .form-section input{
+        width: 40%;
+    }
+}

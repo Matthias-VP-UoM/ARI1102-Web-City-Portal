@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>User Review Page</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+        <!--<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>-->
+    </head>
+    <body id="review-page" onload="loadDateAndTime(); loadPastReviews(); ">
+        <header>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="main.html" target="_blank">Home</a></li>
+                    <!--<li><a href="city-history.html" target="_blank">History</a></li>-->
+                    <li><a href="city-attractions.html" target="_blank">Attractions</a></li>
+                    <li><a href="city-inhabitants.html" target="_blank">Famous Inhabitants</a></li>
+                    <li><a href="user-review.html" target="_blank">User Review</a></li>
+                </ul>
+            </nav>
+            <div class="page-title">
+                <h1><u>Is-Siġġiewi, Malta</u></h1>
+                <h2><i>Citta Ferdinand</i></h2>
+            </div> 
+        </header>
+        <div class="sub-header">
+            <h3>User Review Page</h3>
+        </div>
+        <hr>
+        <div class="form-section">
+            <form name="userform" method="POST">
+                Name: <input type="text" name="name" id="inpName" /><br>
+                Date/Time: <input type="date" id="inpDate" readonly><input type="time" id="inpTime" readonly><br>
+                Message: <br><textarea style="resize: none;"cols="110" rows=10 id="inpMessage"  placeholder="Enter a message about your experience of the city"></textarea><br>
+            </form>
+            <button onclick="sendReviews()">Send Review</button>
+        </div>
+        <hr>
+        <div class="past-reviews-section" id="past-reviews">
+            <!--Name: <input type="text" id="past-name" readonly><br>
+            Date: <input style="width: 15%;" id="past-date" readonly>Time: <input style="width: 10%;" type="time" id="past-time" readonly><br>
+            Message: <br><textarea style="resize: none;"cols="50" rows=10 readonly></textarea><br>-->
+        </div>
+        <script type="text/javascript" src="script_time.js"></script>
+	<script type="text/javascript" src="script_reviews.js"></script>
+    </body>
+</html>
